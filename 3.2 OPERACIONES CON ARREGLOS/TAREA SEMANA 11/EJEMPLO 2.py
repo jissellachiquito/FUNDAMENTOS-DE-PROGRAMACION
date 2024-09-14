@@ -1,4 +1,4 @@
-#REALIZAR UNA MATRIZ DE 3X3
+#Realizar una matriz 3x3
 matriz = [
     [4, 15, 8],
     [6, 21, 9],

@@ -5,7 +5,7 @@ matriz = [
     [23, 39, 19]
 ]
 print(matriz)
-# funcion buscar un valor especifico
+# FUNCION BUSCAR UN VALOR ESPECIFICO
 def buscar_valor(matriz,valor_buscado):
     for i in range(len(matriz)):
         for j in range(len(matriz)):
