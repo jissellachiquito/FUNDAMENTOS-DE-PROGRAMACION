@@ -145,9 +145,9 @@ while True:
     elif opcion == "3": #calculo del promedio de las temperaturas de la cuidad 3
         calcular_promedio(temperaturas[2])
     elif opcion == "4": # salida del menu
-        print("Saliendo del programa...")
+        print("Saliendo ...")
         break
-    else:
+    else: #en caso que ingrese otra opcion
         print("Opción no válida, intenta de nuevo.")
 
 
