@@ -53,9 +53,9 @@ temperaturas = [
             {"day": "Domingo", "temp": 45}
         ],
         [  # Semana 2
-            {"day": "Lunes", "temp": 58},
+            {"day": "Lunes", "temp": 108},
             {"day": "Martes", "temp": 96},
-            {"day": "Miércoles", "temp": 75},
+            {"day": "Miércoles", "temp": 85},
             {"day": "Jueves", "temp": 82},
             {"day": "Viernes", "temp": 41},
             {"day": "Sábado", "temp": 75},
