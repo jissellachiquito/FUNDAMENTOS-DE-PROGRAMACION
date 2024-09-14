@@ -1,3 +1,4 @@
+
 # Crear una matriz 3D para almacenar datos de temperaturas
 # Primera dimensión: Ciudades (3 ciudades)
 # Segunda dimensión: Semanas (4 semanas)
@@ -51,7 +52,7 @@ temperaturas = [
             {"day": "Sábado", "temp": 65},
             {"day": "Domingo", "temp": 45}
         ],
-        [  # Semana 2 (corregido temp de Martes)
+        [  # Semana 2
             {"day": "Lunes", "temp": 58},
             {"day": "Martes", "temp": 96},
             {"day": "Miércoles", "temp": 85},
