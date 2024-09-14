@@ -1,5 +1,5 @@
 
-# Crear una matriz 3D para almacenar datos de temperaturas
+# Crear una matriz 3D para almacenar datos de temperaturas y calcular su promedio
 # Primera dimensión: Ciudades (3 ciudades)
 # Segunda dimensión: Semanas (4 semanas)
 # Tercera dimensión: Días de la semana (7 días)
