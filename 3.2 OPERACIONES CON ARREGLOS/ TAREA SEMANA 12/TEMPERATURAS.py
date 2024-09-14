@@ -55,7 +55,7 @@ temperaturas = [
         [  # Semana 2
             {"day": "Lunes", "temp": 58},
             {"day": "Martes", "temp": 96},
-            {"day": "Miércoles", "temp": 85},
+            {"day": "Miércoles", "temp": 75},
             {"day": "Jueves", "temp": 82},
             {"day": "Viernes", "temp": 41},
             {"day": "Sábado", "temp": 75},
@@ -92,7 +92,7 @@ temperaturas = [
         ],
         [  # Semana 2
             {"day": "Lunes", "temp": 49},
-            {"day": "Martes", "temp": 51},
+            {"day": "Martes", "temp": 1},
             {"day": "Miércoles", "temp": 33},
             {"day": "Jueves", "temp": 40},
             {"day": "Viernes", "temp": 67},
