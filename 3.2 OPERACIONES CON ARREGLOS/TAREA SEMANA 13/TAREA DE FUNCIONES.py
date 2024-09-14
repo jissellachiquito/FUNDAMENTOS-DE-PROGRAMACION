@@ -1,7 +1,8 @@
-# Crear una matriz 3D para almacenar datos de temperaturas y calcular su promedio
+# Crear una matriz 3D para almacenar datos de temperaturas
 # Primera dimensión: Ciudades (3 ciudades)
 # Segunda dimensión: Semanas (4 semanas)
 # Tercera dimensión: Días de la semana (7 días)
+
 temperaturas = [
     [  # Ciudad 1
         [  # Semana 1
@@ -118,5 +119,63 @@ temperaturas = [
         ]
     ]
 ]
+
+
+# Función para calcular el promedio
+def calcular_promedio(temperaturas, ciudad_idx):
+    ciudad = temperaturas[ciudad_idx]  # Acceder a la ciudad usando el índice proporcionado
+    suma_temperaturas = 0
+    total_dias = 0
+
+    # Recorrer las semanas
+    for semana in ciudad:
+        for dia in semana:
+            suma_temperaturas += dia["temp"]
+            total_dias += 1
+
+    # Calcular el promedio
+    promedio = suma_temperaturas / total_dias
+    return promedio
+
+
+# Menú interactivo
+while True:
+    print("Selecciona una ciudad:")
+    print("1 - Ciudad 1")
+    print("2 - Ciudad 2")
+    print("3 - Ciudad 3")
+    print("4 - Salir")
+
+#seleccione la ciudad
+    opcion = input("Ingrese una opción: ")
+
+    if opcion == "1": #calculo del promedio total de las temperaturas de la cuidad 1
+        promedio = calcular_promedio(temperaturas, 0)
+        print(f'El promedio total de temperatura de la Ciudad 1 es: {promedio:.2f}°F')
+    elif opcion == "2": #calculo del promedio total de las temperaturas de la cuidad 2
+        promedio = calcular_promedio(temperaturas, 1)
+        print(f'El promedio total de temperatura de la Ciudad 2 es: {promedio:.2f}°F')
+    elif opcion == "3": #calculo del promedio total de las temperaturas de la cuidad 3
+        promedio = calcular_promedio(temperaturas, 2)
+        print(f'El promedio total de temperatura de la Ciudad 3 es: {promedio:.2f}°F')
+    elif opcion == "4": #saliendo del menu
+        print("Saliendo...")
+        break
+    else: #en caso que ingrese otra opcion
+        print("Opción no válida, intenta de nuevo.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
