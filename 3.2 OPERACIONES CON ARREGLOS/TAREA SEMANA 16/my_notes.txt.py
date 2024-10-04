@@ -11,7 +11,7 @@ with open('my_notes.txt', 'r') as file:# Abre el archivo
     # Leer cada línea del archivo
     line = file.readline()  # Lee la primera línea
     while line:  # Mientras haya líneas lee
-        print(line.strip())  # Imprime la línea sin saltos
+        print(line.strip())  # Imprime la línea
         line = file.readline()  # Lee la siguiente línea
 
 # El archivo se cierra automáticamente al salir del bloque with
