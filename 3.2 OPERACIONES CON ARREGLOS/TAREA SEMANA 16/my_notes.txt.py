@@ -1,20 +1,26 @@
+# Abrir el archivo my_notes.txt en modo escritura ('w') para agregar tres nuevas notas personales
+archivo_escritura = open('my_notes.txt', 'w')
 
-# Crear y escribir en el archivo my_notes.txt
-with open('my_notes.txt', 'w') as file:  # Abre el archivo
-    file.write("Estas son mis notas personales:\n")
-    file.write("Tarea 1: Hacer la compra \n")  # la primera línea
-    file.write("Tarea 2: Estudiar para el examen \n")  # la segunda línea
-    file.write("Tarea 3: Limpiar la casa \n")  # la tercera línea
+# Escribir tres nuevas notas personales, cada una en una línea diferente
+archivo_escritura.write("Estas son mis notas personales:\n")
+archivo_escritura.write("Nota 1: Hacer las compras.\n")
+archivo_escritura.write("Nota 2: Estudiar para el examen.\n")
+archivo_escritura.write("Nota 3: Limpiar la casa por la tarde.\n")
 
-# Leer el archivo my_notes.txt
-with open('my_notes.txt', 'r') as file:# Abre el archivo
-    # Leer cada línea del archivo
-    line = file.readline()  # Lee la primera línea
-    while line:  # Mientras haya líneas lee
-        print(line.strip())  # Imprime la línea
-        line = file.readline()  # Lee la siguiente línea
+# Cerrar el archivo después de escribir las notas
+archivo_escritura.close()
 
-# El archivo se cierra automáticamente al salir del bloque with
+# Abrimos el archivo nuevamente en modo lectura ('r') para leer y mostrar las notas
+archivo_lectura = open('my_notes.txt', 'r')
+
+# Leer el archivo línea por línea utilizando readline() y mostramos cada línea
+linea = archivo_lectura.readline()  # Leemos la primera línea
+while linea:
+    print(linea.strip())  # Mostramos la línea sin el salto de línea al final
+    linea = archivo_lectura.readline()  # Leemos la siguiente línea
+
+# Cerramos el archivo después de leerlo
+archivo_lectura.close()
 
 
 
